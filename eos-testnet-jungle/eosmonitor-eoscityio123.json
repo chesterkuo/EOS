@@ -1,0 +1,15 @@
+{
+    "bp_name": "eoscityio123",
+    "organisation": "eoscity",
+    "location": "Taiwan",
+    "node_addr": "114.114.1.1",
+    "port_http": "8888",
+    "port_ssl": "{{port_ssl}}",
+    "port_p2p": "{{port_p2p}}",
+    "pub_key": "EOS5DyqsEjZeukx5xJdcdowP77YuwAZ5hZ1pDs6TzPymDzYcZV31b",
+    "bp": true,
+    "enabled": true,
+    "comment": "",
+    "telegram": ""
+    "url": "url"
+}
