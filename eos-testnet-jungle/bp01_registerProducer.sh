@@ -1,11 +1,6 @@
 #!/bin/bash
-################################################################################
-#
-# Scrip Created by http://CryptoLions.io
-# For EOS Junlge testnet
-#
-# https://github.com/CryptoLions/
-#
-################################################################################
+ACCOUNT="eoscityioeos"
+PUBKEY="EOS5MM1wJP3cz3dkDKPXoiHzBMCwauDkcnRTjjkzFZEd9snMYDei2"
+URL="http://cryptolions.io"
 
-./cleos.sh system regproducer eoscityio123 EOS5DyqsEjZeukx5xJdcdowP77YuwAZ5hZ1pDs6TzPymDzYcZV31b "" -p eoscityio123
+./cleos.sh system regproducer $ACCOUNT $PUBKEY "$URL" -p $ACCOUNT

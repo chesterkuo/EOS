@@ -1,12 +1,8 @@
 #!/bin/bash
-################################################################################
-#
-# Scrip Created by http://CryptoLions.io
-# For EOS Junlge testnet
-#
-# https://github.com/CryptoLions/
-#
-################################################################################
+FROM="eoscityioeos"
+TO="eoscityioeos"
+NET="99.0000 EOS"
+CPU="99.0000 EOS"
 
-./cleos.sh system delegatebw eoscityio123 eoscityio123 "1000.0000 EOS" "1000.0000 EOS" -p eoscityio123
-#./cleos.sh push action eosio delegatebw '{"from":"eoscityio123", "receiver":"eoscityio123", "stake_net_quantity": "1000.0000 EOS", "stake_cpu_quantity": "1000.0000 EOS", "transfer": true}' -p eoscityio123
+
+./cleos.sh system delegatebw $FROM $TO "$NET" "$CPU" -p $FROM
