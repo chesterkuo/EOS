@@ -1,0 +1,24 @@
+{
+  "name": "price-oracle",
+  "version": "1.0.0",
+  "description": "This is a simple service that can store information of different exchange rates in a Multi-Index Table on the EOS blockchain, where any developer can access the data.",
+  "main": "price_update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eosrio/eos-price-oracle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eosrio/eos-price-oracle/issues"
+  },
+  "homepage": "https://github.com/eosrio/eos-price-oracle#readme",
+  "dependencies": {
+    "eosjs": "^16.0.9",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}

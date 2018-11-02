@@ -1,0 +1,140 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Fri Nov  2 15:36:16 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "createticker",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ticker_name",
+                    "type": "name"
+                },
+                {
+                    "name": "exchanges",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "deleteticker",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ticker_name",
+                    "type": "name"
+                },
+                {
+                    "name": "exchanges",
+                    "type": "string[]"
+                }
+            ]
+        },
+        {
+            "name": "exchange",
+            "base": "",
+            "fields": [
+                {
+                    "name": "exchange_name",
+                    "type": "string"
+                },
+                {
+                    "name": "exchange_price",
+                    "type": "float64"
+                }
+            ]
+        },
+        {
+            "name": "ticker",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ticker_name",
+                    "type": "name"
+                },
+                {
+                    "name": "exchanges",
+                    "type": "exchange[]"
+                },
+                {
+                    "name": "avg_price",
+                    "type": "float64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "update",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ticker_name",
+                    "type": "name"
+                },
+                {
+                    "name": "prices",
+                    "type": "float64[]"
+                },
+                {
+                    "name": "avg_price",
+                    "type": "float64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "updateticker",
+            "base": "",
+            "fields": [
+                {
+                    "name": "ticker_name",
+                    "type": "name"
+                },
+                {
+                    "name": "exchanges",
+                    "type": "string[]"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "createticker",
+            "type": "createticker",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deleteticker",
+            "type": "deleteticker",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "update",
+            "type": "update",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updateticker",
+            "type": "updateticker",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "ticker",
+            "type": "ticker",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
