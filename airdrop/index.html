@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EOS toekn checking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body class="container">
+    <h1 class="text-center">EOS Token Airdrop check</h1>
+
+
+    <div class="form-group">
+        <label for="eos-account"><strong>Network</strong></label>
+        <select class="form-control" id="network">
+            <option value="http://jungle.cryptolions.io:18888">EOS Jungle TestNet</option>
+			<option value="https://api.eosnewyork.io">EOS Main Net</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="eos-account"><strong>Account Name</strong></label>
+        <input id="eos-account" class="form-control" placeholder="EOS Account">
+    </div>
+    <div class="form-group">
+        <label for="token-symbol"><strong>AirDrop Token Symbol</strong></label>
+        <input id="token-symbol" class="form-control" placeholder="Token Symbol">
+    </div>
+
+
+    <div class="form-group">
+        <button id="check" class="btn" onclick="checkairdrop()">Check</button>
+    </div>
+
+    <table id="balance" class="table">
+        <tbody></tbody>
+    </table>
+	
+    <script src="eosjs-browser.js"></script>
+    <script src="main.js"></script>
+</body>
+
+<head>
+</head>
+
+</html>
