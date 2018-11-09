@@ -1,17 +1,6 @@
 
+This is a EOS smart contract example demo with inline/deferred action model.
+In this example, we try to get price from Binance,oken...etc and average those price and update it into
+smart contract through update action, those example based on nodejs case.
 
-
-executed transaction: 61a53e8e4ac7faf2625e3c4930d3093710e3fb8a1037cd76e302dbe08caf53a7  136 bytes  558 us
-#  eoscityiobak <= eoscityiobak::createticker   {"ticker_name":"eosusdt","exchanges":["binance","bitfinex","huobi","okex"]}
-#  eoscityiobak <= eoscityiobak::notify         {"user":"eoscityiobak","message":"eoscityiobak Add new ticker successfully"}
-#  eoscityiocnt <= eoscityiocnt::count          {"user":"eoscityiobak","type":" Add into counter"}
-
-$ /opt/eos-jungle-testnet/cleos.sh push action eoscityiobak createticker '["eosioalice22", "eosusdt",["binance","bitfinex","huobi","okex"]]' -p eosioalice22@active
-executed transaction: 8843006cebe30c40a5ef3a178609d70fa9208c70092f0b827c2e7db554a25964  144 bytes  738 us
-#  eoscityiobak <= eoscityiobak::createticker   {"user":"eosioalice22","ticker_name":"eosusdt","exchanges":["binance","bitfinex","huobi","okex"]}
-#  eoscityiobak <= eoscityiobak::notify         {"user":"eosioalice22","message":"eosioalice22 Add new ticker successfully"}
->> Notify....eosioalice22
-#  eosioalice22 <= eoscityiobak::notify         {"user":"eosioalice22","message":"eosioalice22 Add new ticker successfully"}
-#  eoscityiocnt <= eoscityiocnt::count          {"user":"eosioalice22","type":" Send log to external contract"}
->> Get info from ....eosioalice22Log : Send log to external contract
-warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+ex: node price_update.js
