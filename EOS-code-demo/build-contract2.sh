@@ -3,10 +3,21 @@
 #deploy
 #/opt/now/Node-Manual-Installation/cleos-jungle.sh set contract hellohello22 . hi.wasm hi.abi -p hellohello22@active
 
-#/opt/now/Node-Manual-Installation/cleos-jungle.sh set account permission hellohello22 active EOS6s7oyeSNxUcWLysZQUEh7uKQPKyUwoJBN9bTfPZa9zGB9wJr8W owner -p hellohello22@owner
+
+
+# delete per
+# /opt/now/Node-Manual-Installation/cleos-jungle.sh set account permission hellohello22 newperm null active
+
 # permission
-#/opt/now/Node-Manual-Installation/cleos-jungle.sh set account permission hellohello22 newperm '{"threshold":1,"keys":[{"keys":"EOS6s7oyeSNxUcWLysZQUEh7uKQPKyUwoJBN9bTfPZa9zGB9wJr8W","weight":1}],"accounts":[{"permission":{"actor":"hellohello22","permission":"eosio.code"},"weight":1}]}' active -p hellohello22@active
+#/opt/now/Node-Manual-Installation/cleos-jungle.sh set account permission hellohello22 active --add-code
 
 #Test
-/opt/now/Node-Manual-Installation/cleos-jungle.sh push action hellohello22 hito '[]' -p hellohello22@owner
+echo "hellohello22 with hito"
+/opt/now/Node-Manual-Installation/cleos-jungle.sh push action hellohello22 hito '[]' -p hellohello22@active
+echo "hellohello22 with hello"
+/opt/now/Node-Manual-Installation/cleos-jungle.sh push action hellohello22 hello '[]' -p hellohello22@active
+
+echo "hellohellohi with hito"
 /opt/now/Node-Manual-Installation/cleos-jungle.sh push action hellohello22 hito '[]' -p hellohellohi@active
+echo "hellohellohi with hello"
+/opt/now/Node-Manual-Installation/cleos-jungle.sh push action hellohello22 hello '[]' -p hellohellohi@active

@@ -1,23 +1,61 @@
 
+/opt/now/Node-Manual-Installation/cleos-jungle.sh get account hellohello22
+created: 2018-12-28T06:22:11.500
+permissions:
+     owner     1:    1 EOS6s7oyeSNxUcWLysZQUEh7uKQPKyUwoJBN9bTfPZa9zGB9wJr8W
+        active     1:    1 EOS6s7oyeSNxUcWLysZQUEh7uKQPKyUwoJBN9bTfPZa9zGB9wJr8W, 1 hellohello22@eosio.code
+memory:
+     quota:     1.086 MiB    used:     45.82 KiB
 
-Warning, empty ricardian clause file
-Warning, empty ricardian clause file
-Warning, action <hello> does not have a ricardian contract
-Warning, action <hito> does not have a ricardian contract
-Reading WASM from /opt/test/demo/hi.wasm...
-Skipping set code because the new code is the same as the existing code
-Skipping set abi because the new abi is the same as the existing abi
-no transaction is sent
-executed transaction: 402d0911a854ef34b051146971c58be8c23edab75ed7d9afaecbba202ba38f9c  96 bytes  331 us
+net bandwidth:
+     staked:          1.0000 EOS           (total stake delegated from account to self)
+     delegated:       0.0000 EOS           (total staked delegated to account from others)
+     used:             6.536 KiB
+     available:        260.2 KiB
+     limit:            266.7 KiB
+
+cpu bandwidth:
+     staked:          1.0000 EOS           (total stake delegated from account to self)
+     delegated:       0.0000 EOS           (total staked delegated to account from others)
+     used:             7.149 ms
+     available:        41.76 ms
+     limit:            48.91 ms
+
+EOS balances:
+     liquid:           80.0000 EOS
+     staked:            2.0000 EOS
+     unstaking:         0.0000 EOS
+     total:            82.0000 EOS
+
+producers:     <not voted>
 
 
-
+$ ./build-contract2.sh
+hellohello22 with hito
+executed transaction: 21ba02df0003aa5c1116bbf14666fbff2cdec2f5c0a0c19f297e3a1c51db6fe2  96 bytes  239 us
 #  hellohello22 <= hellohello22::hito           ""
 #  hellohellohi <= hellohello22::hito           ""
->> in apply,code is:hellohello22    in apply,receiver is:hellohellohi,  _code id in hito:hellohello22,  _self id in hito:hellohellohi  
-warning: transaction executed locally, but may not be confirmed by the network yet         ] 
-executed transaction: a5ba8c69193dfbc3f339b013db2a2c8733f1750f5300759dc418b47d4c337626  96 bytes  347 us
+>> in apply,code is:hellohello22    in apply,receiver is:hellohellohi,  _code id in hito:hellohello22,  _self id in hito:hellohellohi
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+hellohello22 with hello
+executed transaction: 9d87db9e5626495a700aaef2c920322abb81efd7c6674f4a494ec493b019bf29  96 bytes  477 us
+#  hellohello22 <= hellohello22::hello          ""
+#  hellohellohi <= hellohellohi::hi             ""
+>> in apply,code is:hellohellohi    in apply,receiver is:hellohellohi,  _code id in hi:hellohellohi,  _self id in hi:hellohellohi
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
+
+hellohellohi with hito
+executed transaction: 04e2b1e16deec5b537b5e41ccbd6fb187120233d3f5b3701339d5af245ba9f92  96 bytes  279 us
 #  hellohello22 <= hellohello22::hito           ""
 #  hellohellohi <= hellohello22::hito           ""
->> in apply,code is:hellohello22    in apply,receiver is:hellohellohi,  _code id in hito:hellohello22,  _self id in hito:hellohellohi  
-warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+>> in apply,code is:hellohello22    in apply,receiver is:hellohellohi,  _code id in hito:hellohello22,  _self id in hito:hellohellohi
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+hellohellohi with hello
+executed transaction: 6479e54286bdc6241f587ebc3d589708ac1a432e31f381694f8da726b54df9a1  96 bytes  429 us
+#  hellohello22 <= hellohello22::hello          ""
+#  hellohellohi <= hellohellohi::hi             ""
+>> in apply,code is:hellohellohi    in apply,receiver is:hellohellohi,  _code id in hi:hellohellohi,  _self id in hi:hellohellohi
+warning: transaction executed locally, but may not be confirmed by the network yet         ]
+
