@@ -1,0 +1,10 @@
+
+./build-hello.sh 
+executed transaction: 9306bc31468503a1f14ce97afc9f4ae78800dbcf1a72d874c223ceed69b01293  96 bytes  355 us
+#  hellohellohi <= hellohellohi::hi             ""
+>> in apply,code is:hellohellohi    _code id:hellohellohi
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+executed transaction: 5b3d2625a4345204cc999e831c052f31ca8304eacef4f6d60884f44316485467  96 bytes  296 us
+#  hellohellohi <= hellohellohi::hi             ""
+>> in apply,code is:hellohellohi    _code id:hellohellohi
+warning: transaction executed locally, but may not be confirmed by the network yet         ]

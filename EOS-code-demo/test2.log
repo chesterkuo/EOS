@@ -1,0 +1,23 @@
+
+
+Warning, empty ricardian clause file
+Warning, empty ricardian clause file
+Warning, action <hello> does not have a ricardian contract
+Warning, action <hito> does not have a ricardian contract
+Reading WASM from /opt/test/demo/hi.wasm...
+Skipping set code because the new code is the same as the existing code
+Skipping set abi because the new abi is the same as the existing abi
+no transaction is sent
+executed transaction: 402d0911a854ef34b051146971c58be8c23edab75ed7d9afaecbba202ba38f9c  96 bytes  331 us
+
+
+
+#  hellohello22 <= hellohello22::hito           ""
+#  hellohellohi <= hellohello22::hito           ""
+>> in apply,code is:hellohello22    in apply,receiver is:hellohellohi,  _code id in hito:hellohello22,  _self id in hito:hellohellohi  
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
+executed transaction: a5ba8c69193dfbc3f339b013db2a2c8733f1750f5300759dc418b47d4c337626  96 bytes  347 us
+#  hellohello22 <= hellohello22::hito           ""
+#  hellohellohi <= hellohello22::hito           ""
+>> in apply,code is:hellohello22    in apply,receiver is:hellohellohi,  _code id in hito:hellohello22,  _self id in hito:hellohellohi  
+warning: transaction executed locally, but may not be confirmed by the network yet         ] 
